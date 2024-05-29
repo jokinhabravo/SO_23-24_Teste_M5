@@ -21,7 +21,7 @@ Quando acabares, carrega no botão "Commit Changes".
     C) chmod +r script.sh
     D) chmod -r script.sh
     
-    Resposta: ...
+    Resposta: A
 
   2. Como se define um comentário num script Bash?
 
@@ -30,7 +30,7 @@ Quando acabares, carrega no botão "Commit Changes".
     C) # comentário
     D) -- comentário
     
-    Resposta: ...
+    Resposta: C
    
   3. Que comando é usado para adicionar uma linha de texto ao final de um arquivo em Bash?
 
@@ -39,7 +39,7 @@ Quando acabares, carrega no botão "Commit Changes".
     C) echo "texto" | arquivo
     D) echo "texto" >> arquivo
     
-    Resposta: ...
+    Resposta: D
 
   4. Qual é o comando usado para ler a entrada do utilizador num script Bash?
 
@@ -48,7 +48,7 @@ Quando acabares, carrega no botão "Commit Changes".
     C) get
     D) scan
     
-    Resposta: ...
+    Resposta: A
 
   5. Que símbolo é usado para denotar uma variável em Bash?
 
@@ -57,24 +57,35 @@ Quando acabares, carrega no botão "Commit Changes".
     C) &
     D) #
     
-    Resposta: ...
+    Resposta: A
 
 ## P2 - Escreve scripts em Bash para realizar as seguintes instruções: (7.5v)
 
   1. Exibir a mensagem "Olá, Mundo!" no terminal.
 
     Resposta:
-    ...
+    echo "ola,mundo!"
     
   2. Receber dois números como entrada, e exibir a soma dos dois.
 
-    Resposta:
-    ...
+    echo "digite o primeiro numero:"
+    read numero1
+    echo "digite o segundo numero:"
+    read numero2
+    soma=$((numero1 + numero2))
+    echo "a soma de $numero1 e $numero2
+    
 
   3. Ler um valor numérico e imprimir uma mensagem a informar se o mesmo é par ou ímpar.
 
     Resposta:
-    ...
+    echo "digite um numero:"
+    read numero
+    if (( numero % 2 == 0 )); then
+         echo "o numero $numero é par."
+         else
+            echo "o numero $ numero é impar.
+            fi
 
 ## P3 - Indica o que é realizado pelas seguintes instruções: (6v)
 
@@ -83,7 +94,7 @@ Quando acabares, carrega no botão "Commit Changes".
     echo "scale=2;22/7" | bc
 
     Resposta:
-    ...
+    imprime o 22/27 com duas casas decimais
      
   2. 
     
@@ -97,7 +108,7 @@ Quando acabares, carrega no botão "Commit Changes".
 
 
     Resposta:
-    ...
+    
 
   3. 
     
@@ -122,4 +133,9 @@ Quando acabares, carrega no botão "Commit Changes".
   2. Como se utiliza a instrução 'if-else' num script Bash? Escreve um exemplo simples.
 
     Resposta:
-    ...
+    then
+    elif (condição);then
+    else 
+         do
+    fi
+
